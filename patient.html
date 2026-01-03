@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Dashboard - Book Appointment</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial;
+      background: #eef2f5;
+    }
+    .container {
+      width: 500px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    select, input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    button {
+      background: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Book Appointment</h2>
+
+  <select id="doctorSelect">
+    <option value="">Select Doctor</option>
+  </select>
+
+  <input type="date" id="date">
+
+  <select id="timeSelect">
+    <option value="">Select Time Slot</option>
+  </select>
+
+  <button onclick="bookAppointment()">Book Appointment</button>
+</div>
+
+<script type="module" src="patient.js"></script>
+
+</body>
+</html>
